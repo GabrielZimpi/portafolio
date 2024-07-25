@@ -29,7 +29,7 @@ body {
 }
 
 .barra-lateral h1 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -115,8 +115,128 @@ body {
         border: 0.3em solid black;
         border-top: 0;
     }
+    .carruselHob    {
+        padding: 0.5em;
+        width: 100%;
+    }
 }
 
 .footer {
     background-color: #10e956;
+}
+
+/* sobre mi */
+.hiPresentacion {
+    margin-bottom: 1.5rem;
+    width: max-content;
+}
+.hiPresentacion span {
+    animation: saludo 2.5s infinite;
+    display: inline-block;
+    font-size: 1.7rem;
+}
+.hiPresentacion p   {
+    background: rgba(20, 233, 88, .157);
+    border-radius: 12px;
+    color: #14e956;
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: .05em;
+    margin: 0;
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+}
+
+@keyframes saludo {
+    0% {
+        -webkit-transform: translateZ(0) scale(1);
+        transform: translateZ(0) scale(1);
+    }
+    
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate(-5deg) scale(1.1);
+        transform: translate3d(-25%, 0, 0) rotate(-5deg) scale(1.1);
+    }
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate(3deg) scale(1.2);
+        transform: translate3d(20%, 0, 0) rotate(3deg) scale(1.2);
+    }
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate(-3deg) scale(1.3);
+        transform: translate3d(-15%, 0, 0) rotate(-3deg) scale(1.3);
+    }
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate(2deg) scale(1.2);
+        transform: translate3d(10%, 0, 0) rotate(2deg) scale(1.2);
+    }
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate(-1deg) scale(1.1);
+        transform: translate3d(-5%, 0, 0) rotate(-1deg) scale(1.1);
+    }
+    100% {
+        -webkit-transform: translateZ(0) scale(1);
+        transform: translateZ(0) scale(1);
+    }
+}
+#sobre-mi   {
+    flex-direction: column;
+    width: 90%;
+    margin: 1em auto 1em auto;
+}
+.presentacion   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+}
+#sobre-mi hr{
+    margin: 1em 0 0.5em 0;
+    background-color: #10e956;
+    padding: 0.1em;
+    border: 0.1em black solid;
+    border-radius: 1em;
+}
+.textoPresent   {
+    width: 50%;
+    min-width: 17em;
+    padding: 1em;
+}
+.imgPresent   {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgPresent img {
+    width: 12em;
+}
+.carruselHob {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 29em;
+    background-color: whitesmoke;
+    align-content: space-around;
+    padding: 1em;
+    border-radius: 5em;
+    border: 2px solid green;
+    box-shadow: 0 0 0 1px black;
+}
+
+.carruselHob img {
+    width: 12em;
+    margin: 0.5em;
+    border-radius: 4em;
+    border: 0.3em black solid;
+}
+@media (max-width: 767px) {
+    .carruselHob    {
+        padding: 0.5em;
+        width: 100%;
+    }
 }
