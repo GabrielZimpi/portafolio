@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    text-transform: capitalize;
+    font-family: 'Exo Space', sans-serif;
+    width: 95%;
+    margin: 2em auto 2em auto;                                     
+}
+.contenedor {
+    display: flex;
+    width: 100%;
+}
+
+.barra-lateral {
+    background-color: #10e956;
+    padding: 20px;
+    width: 250px;
+    border: 0.3em solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.barra-lateral h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.barra-lateral p {
+    margin-bottom: 20px;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 3em;
+}
+
+.barra-lateral ul li {
+    margin-bottom: 10px;
+}
+
+.barra-lateral ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2em;
+}
+
+.contenido {
+    flex: 1;
+    padding: 20px;
+    border: 0.3em solid black;
+    border-left: 0;
+}
+
+.contenido section {
+    margin-bottom: 40px;
+}
+
+.contenido section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .barra-lateral {
+        width: 100%;
+    }
+
+    .barra-lateral ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .barra-lateral ul li {
+        margin-bottom: 0;
+        width: 100%;
+        padding-bottom: 0.5em;
+    }
+
+    .contenido {
+        flex: 1;
+        padding: 20px;
+        border: 0.3em solid black;
+        border-top: 0;
+    }
+
+    .contenido section {
+        margin-bottom: 20px;
+    }
+
+    .contenido section h2 {
+        font-size: 20px;
+    }
+    .posifooter {
+        border: 0.3em solid black;
+        border-top: 0;
+    }
+}
+
+.footer {
+    background-color: #10e956;
+}
