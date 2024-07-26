@@ -16,6 +16,7 @@ body {
 .contenedor {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .barra-lateral {
@@ -29,14 +30,21 @@ body {
 }
 
 .barra-lateral h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 4em;
+    font-family: 'Born2bSporty FS', sans-serif;                                         
 }
 
-.barra-lateral p {
+.pBarraLateral {
     margin-bottom: 20px;
+    font-size: 2em;
 }
-
+.zimpi  {
+    color: blue;
+    text-align: right;
+    font-size: 4em;
+    margin-bottom: 0.1em;
+    font-family: 'Born2bSporty FS', sans-serif;
+}
 .barra-lateral ul {
     list-style: none;
     font-weight: 900;
@@ -98,10 +106,9 @@ body {
     }
 
     .contenido {
-        flex: 1;
-        padding: 20px;
         border: 0.3em solid black;
         border-top: 0;
+        width: 100%;
     }
 
     .contenido section {
@@ -228,11 +235,54 @@ body {
     box-shadow: 0 0 0 1px black;
 }
 
-.carruselHob img {
+.carruselHob .container {
+    position: relative;
     width: 12em;
     margin: 0.5em;
+    border: solid 0.2em black;
+    height: 12em;
     border-radius: 4em;
-    border: 0.3em black solid;
+    transition: .5s ease;
+}
+
+.carruselHob .image {
+    width: 100%;
+    border-radius: 3.8em;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 100%;
+}
+
+.carruselHob .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.carruselHob .container:hover .image {
+    opacity: 0.3;
+}
+
+.carruselHob .container:hover .middle {
+    opacity: 1;
+}
+.carruselHob .container:hover  {
+    border: 0.3em solid #10e956;
+    box-shadow: 0 0 0 0.2em black;
+}
+
+.carruselHob .text {
+    background-color: #10e956;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 1em;
+    border: 0.2em solid black;
 }
 @media (max-width: 767px) {
     .carruselHob    {
