@@ -5,13 +5,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     display: flex;
-    height: 100vh;
     text-transform: capitalize;
     font-family: 'Exo Space', sans-serif;
-    width: 95%;
-    margin: 2em auto 2em auto;                                     
+    width: 90%;
+    margin: 5vw auto 5vw auto;                                   
 }
 .contenedor {
     display: flex;
@@ -127,6 +125,11 @@ body {
         width: 100%;
     }
 }
+@media (max-width: 990px){
+    .presentacion {
+        flex-wrap: wrap;
+    }
+}
 
 .footer {
     background-color: #10e956;
@@ -192,10 +195,9 @@ body {
 }
 .presentacion   {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    width: 60%;
+    width: 80%;
 }
 #sobre-mi hr{
     margin: 1em 0 0.5em 0;
@@ -205,18 +207,22 @@ body {
     border-radius: 1em;
 }
 .textoPresent   {
-    width: 50%;
+    width: 60%;
     min-width: 17em;
     padding: 1em;
+    text-align: justify;
+    text-transform: uppercase;
 }
 .imgPresent   {
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .imgPresent img {
-    width: 12em;
+    width: 17em;
+    border: solid 0.3em black;
+    border-radius: 4em;
 }
 .carruselHob {
     display: flex;
@@ -279,14 +285,30 @@ body {
 
 .carruselHob .text {
     background-color: #10e956;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-size: 1.5em;
+    padding: 10px 14px;
     border-radius: 1em;
     border: 0.2em solid black;
+    font-weight: bolder;
+}
+.palabraclave   {
+    color: blue;
+    font-family: 'Born2bSporty FS', sans-serif;
+    font-size: 1.5em;
+}
+.palabraclave2   {
+    color: red;
+    font-family: 'Born2bSporty FS', sans-serif;
+    font-size: 1.65em;
 }
 @media (max-width: 767px) {
     .carruselHob    {
         padding: 0.5em;
         width: 100%;
+    }
+}
+@media (min-width: 752px) and (max-width: 1324px) {
+    .imgPresent {
+        width: 60%;
     }
 }
