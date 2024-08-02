@@ -312,3 +312,68 @@ body {
         width: 60%;
     }
 }
+
+/* HABILIDADES*/
+#habilidades    {
+    flex-direction: column;
+}
+#habilidades h2   {
+    font-family: 'Membra', sans-serif;
+    font-size: clamp(1em, 2.2vw, 50em);                              
+}
+.h2habili   {
+    text-align: center;
+    background-color: whitesmoke;
+    width: 51vw;
+    margin: auto;
+    color: blue;
+    border: 0.3em solid black;
+    box-shadow: 0.5em 0.5em red;
+    border-radius: 1em;
+    min-width: 15em; 
+}
+.habilidadeshr  {
+    margin-top: 5em;
+    background-color: #10e956;
+    padding: 0.1em;
+    border: 0.1em black solid;
+    border-radius: 1em;
+}
+.recuskillprogr  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+.skillimgpr {
+    width: 11em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12em;
+    margin-bottom: -5em;
+}
+.skillimgpr img{
+    height: 50%;
+    filter: grayscale(100%);
+}
+.skillimgpr img:hover{
+    height: 50%;
+    filter: none;
+    cursor: help;
+}
+.skillsprogram br   {
+    margin: auto;
+}
+.hrspecial  {
+    width: 65%;
+    background-color: #10e956;
+    padding: 0.15em;
+    border: 0.15em black solid;
+    border-radius: 1em;
+    margin: auto;
+}
+.excel  {
+    width: 5.3em;
+}
