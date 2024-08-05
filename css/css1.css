@@ -390,3 +390,102 @@ body {
 .skillimgpr .githubimg  {
     height: 68%;
 }
+
+
+.otrasskills {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+#habilidades .otrasskills h2 {
+    text-align: center;
+    color: #10e956;
+    margin-bottom: 20px;
+    font-family: 'Sweetie Love', sans-serif;
+    font-size: clamp(2em, 3vw, 50em);
+    border: 0.1em solid #47ffc7;
+    border-radius: 1em;
+    background-color: #000000;
+    padding: 0.3em;                                         
+}
+
+.skill-list {
+    list-style: none;
+    max-width: 80em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skill-list li {
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    border: 0.3em solid #4caf50;
+    text-transform: none;
+    width: 45%;
+    min-width: 10em;
+}
+
+.skill-list li:hover {
+    background-color: #fffdfd;
+    border: 0.0em solid #4caf50;
+    zoom: 1.2;
+}
+
+.skill-list li::before {
+    content: '✓';
+    color: #4caf50;
+    font-weight: bold;
+    transform: translateY(-50%);
+    margin-right: 0.4em;
+}
+
+.quotes {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.quote-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.quote-list li {
+    background-color: #10e956;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: italic;
+    width: 45%;
+    min-width: 8em;
+}
+
+.quote-list li::before {
+    content: '✓';
+    color: #ffffff00;
+    font-weight: bold;
+    transform: translateY(-50%);
+    margin: 0;
+}
+.skill-list .quotes:hover   {
+    background-color: #e0e0e0;
+    border: 0.3em solid #4caf50;
+    zoom: 1.2;
+}
+.skill-list .quotes .quote-list li:hover {
+    background-color: #fffdfd;
+    border: 0.0em solid #4caf50;
+    zoom: 0;
+}
