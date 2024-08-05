@@ -319,7 +319,8 @@ body {
 }
 #habilidades h2   {
     font-family: 'Membra', sans-serif;
-    font-size: clamp(1em, 2.2vw, 50em);                              
+    font-size: clamp(1em, 2.2vw, 50em);    
+    margin-top: 0.3em;                          
 }
 .h2habili   {
     text-align: center;
@@ -363,6 +364,12 @@ body {
     filter: none;
     cursor: help;
 }
+.skillimgpr .angularimg:hover, .skillimgpr .proteusimg:hover {
+    height: 60%;
+}
+.skillimgpr .githubimg:hover  {
+    height: 68%;
+}
 .skillsprogram br   {
     margin: auto;
 }
@@ -376,4 +383,10 @@ body {
 }
 .excel  {
     width: 5.3em;
+}
+.skillimgpr .angularimg, .skillimgpr .proteusimg {
+    height: 60%;
+}
+.skillimgpr .githubimg  {
+    height: 68%;
 }
