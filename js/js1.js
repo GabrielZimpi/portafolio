@@ -38,3 +38,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     window.addEventListener('resize', ajustarFooter);
     ajustarFooter();
 });
+
+/*PRESENTACION*/
+function skipPresentation() {
+    document.getElementById('bodypresent').classList.add('hidden');
+    document.getElementById('bodyprincip').classList.remove('hidden');
+}
+
+setTimeout(function() {
+    document.getElementById('bodypresent').classList.add('hidden');
+    document.getElementById('bodyprincip').classList.remove('hidden');
+}, 8000);

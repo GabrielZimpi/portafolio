@@ -12,204 +12,244 @@
     <script src="js/js1.js"></script>
 </head>
 <body>
-    <div class="contenedor">
-        <nav class="barra-lateral">
-            <h1>Gabriel Cimpean</h1>
-            <p class="zimpi">(Zimpi)</p>
-            <p class="pBarraLateral">Programador</p>
-            <ul>
-                <li><a href="#sobre-mi">Sobre Mi</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <main class="contenido">
-
-            <section id="sobre-mi">
-                <div class="hiPresentacion">
-                    <p>
-                        <span>✌🏻</span>
-                        Hola, Soy Zimpi
-                    </p>
-                </div>
-                <div class="presentacion">
-                    <div class="textoPresent">
-                        <p>¡Hola! Soy Gabriel Cimpean, pero puedes llamarme <spam class="palabraclave">Zimpi</spam>.</p> 
-                        <br>
-                        <p>Soy un desarrollador web con una pasión especial por la <spam class="palabraclave">programación</spam> y la <spam class="palabraclave">electrónica</spam>. 
-                            He trabajado en la creación y mantenimiento de páginas web usando HTML, CSS, JS y PHP. 
-                            Además, he estudiado varias áreas tecnológicas como la domótica, el montaje de cuadros 
-                            eléctricos y diversas disciplinas de la informática.</p>    
-                            <br>                        
-                        <p><spam class="palabraclave">Fuera del trabajo</spam>, me encanta tocar el piano, hacer ejercicio y practicar artes marciales. 
-                            También soy árbitro de fútbol sala, lo que me ha enseñado a manejar situaciones 
-                            inesperadas y a trabajar bajo presión. Soy un <spam class="palabraclave">gran fan de la ciencia ficción</spam>, como 
-                            Doctor Who, <spam class="palabraclave">y del misterio</spam>, especialmente de Sherlock Holmes. Disfruto del <spam class="palabraclave">cine</spam> y las 
-                            <spam class="palabraclave">series</spam> de todos los géneros, jugar <spam class="palabraclave">videojuegos</spam> y coleccionar cartas <spam class="palabraclave">(TCG)</spam>, especialmente 
-                            Yu-Gi-Oh!, a lo cual suelo jugar con regularidad.</p>
-                            <br>
-                        <p><spam class="palabraclave">Aspiro</spam> a una carrera que me permita <spam class="palabraclave">canalizar mi creatividad y habilidades técnicas</spam> en 
-                            proyectos innovadores y desafiantes. Si quieres saber más sobre mí, mis proyectos o 
-                            mis habilidades, navega por mi portafolio y <spam class="palabraclave">no dudes en contactarme</spam>.</p>
-                            <br>
-                        <p><spam class="palabraclave2">¡Gracias por conocerme!</spam></p>
-                    </div>                    
-                    <div class="imgPresent">
-                        <img src="img/sobremi.jpeg" alt="sobre mi">
+    <div id="bodypresent">
+        <div class="bodypresent">
+            <div id="botonSalto">
+                <button onclick="skipPresentation()" class="botonsalt">Saltar</button>
+            </div>
+            <div id="animation">
+                <div class="terminal-loader">
+                    <div class="terminal-header">
+                    <div class="terminal-title">Status</div>
+                    <div class="terminal-controls">
+                        <div class="control close"></div>
+                        <div class="control minimize"></div>
+                        <div class="control maximize"></div>
                     </div>
-                </div>
-                <hr>
-                <div class="hobbies">
-                    <h2>Hobbies</h2>
-                    <div class="carruselHob">
-                        <div class="container">
-                            <img src="img/hobbie1.jpeg" alt="hobbie1" class="image">
-                            <div class="middle">
-                                <div class="text">Futbol Sala</div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <img src="img/hobbie2.jpeg" alt="hobbie2" class="image">
-                            <div class="middle">
-                                <div class="text">Judo</div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <img src="img/hobbie3.jpeg" alt="hobbie3" class="image">
-                            <div class="middle">
-                                <div class="text">Ajedrez</div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <img src="img/hobbie4.jpeg" alt="hobbie4" class="image">
-                            <div class="middle">
-                                <div class="text">Programacion web</div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <img src="img/hobbie5.jpeg" alt="hobbie5" class="image">
-                            <div class="middle">
-                                <div class="text">Videojuegos</div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <img src="img/hobbie6.jpeg" alt="hobbie6" class="image">
-                            <div class="middle">
-                                <div class="text">Cine</div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <img src="img/hobbie7.jpeg" alt="hobbie7" class="image">
-                            <div class="middle">
-                                <div class="text">Cubos de Rubik</div>
-                            </div>
-                        </div>
-                        <!-- Add more containers as needed -->
                     </div>
-                </div>              
-            </section>
-
-            <section id="portafolio">
-                <h2>Portafolio</h2>
-                <p>[Tus trabajos realizados]</p>
-            </section>
-
-            <section id="habilidades">
-                <div class="skillsprogram">
-                    <div class="h2habili">
-                        <h2>Habilidades Tecnologicas</h2>
-                        <hr class="hrspecial">
-                        <h2>Programacion</h2>
-                    </div>
-                    <div class="recuskillprogr">
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/html.png" alt="skill programacion 1" title="HTML">
+                    <div class="textoStatus">
+                        <div class="text1">Cargando...</div>
+                        <div class="text2">
+                            <div class="loader">
+                                <div data-glitch="Loading..." class="glitch">...LISTO...</div>
+                             </div>
                         </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/css.png" alt="skill programacion 1" title="CSS">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/js.png" alt="skill programacion 2" title="JS">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/angular.png" alt="skill programacion 3" title="ANGULAR" class="angularimg">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/github.png" alt="skill programacion 4" title="GitHub" class="githubimg">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/excel.png" alt="skill programacion 5" title="EXCEL" class="excel">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/gimp.png" alt="skill programacion 6" title="GIMP">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/vegas.png" alt="skill programacion 7" title="Sony Vegas">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/obs.png" alt="skill programacion 8" title="OBS">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/audacity.png" alt="skill programacion 9" title="Audacity">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/proteus.png" alt="skill programacion 10" title="Proteus" class="proteusimg">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/knx.png" alt="skill programacion 11" title="KNX">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/sql.png" alt="skill programacion 12" title="SQL">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/ccc.png" alt="skill programacion 13" title="C++">
-                        </div>
-                        <div class="skillimgpr">
-                            <img src="img/skillsp/arduino.png" alt="skill programacion 14" title="Arduino">
+                        <div class="text3">
+                            <div class="loader">
+                                <span>&lt;</span>
+                                <span>ZIMPI-PEDIA</span>
+                                <span>/&gt;</span>
+                              </div>
                         </div>
                     </div>
                 </div>
-                <hr class="habilidadeshr">
-                <div class="otrasskills">
-                    <h2>Otras Habilidades</h2>
-                    <ul class="skill-list">
-                        <li>Tengo conocimientos sobre la cultura japonesa: historia, gastronomía, idioma y más.</li>
-                        <li>Aficionado a la ceremonia del té y degustador habitual.</li>
-                        <li>Practicante de karate y judo (entre otras cosas). Siempre buscando el equilibrio, al estilo del Sr. Miyagi.</li>
-                        <li>Amo los rompecabezas, cubos de Rubik, sudokus y cualquier cosa que desafíe mi mente.</li>
-                        <li>Apasionado por la tecnología, me encanta desmontar y arreglar dispositivos.</li>
-                        <li>Fan de los superhéroes: cómics, películas, videojuegos, lo que sea.</li>
-                        <li>Me gusta cocinar y experimentar en la cocina.</li>
-                        <li>Puedo tocar el piano y leer partituras sin problema.</li>
-                        <li>Me gusta resumir películas y series de manera divertida y sin spoilers, para que todo el mundo pueda disfrutarlas.</li>
-                        <li>De vez en cuando, escucho y doy consejos (si me los piden), a veces buenos, a veces no tanto, pero siempre con buena intención.</li>
-                        <li>Aprendo rápido cualquier cosa nueva, especialmente si tiene botones o cables.</li>
-                        <li>Ahorrar dinero es mi superpoder.</li>
-                        <li class="quotes">
-                            Algunas frases que me gustan:
-                            <ul class="quote-list">
-                                <li>"La risa es atemporal, la imaginación no tiene edad y los sueños son para siempre." - Walt Disney</li>
-                                <li>"Un día sin reír es un día perdido." - Charlie Chaplin</li>
-                                <li>"La mejor manera de animarse a uno mismo es intentar animar a alguien más." - Mark Twain</li>
-                                <li>"La vida es como una bicicleta: para mantener el equilibrio, debes seguir adelante." - Albert Einstein</li>
-                                <li>etc.</li>
-                            </ul>
-                        </li>
+            </div>
+        </div>
+    </div>    
+    <div id="bodyprincip" class="hidden">
+        <div class="bodyprincip">
+            <div class="contenedor">
+                <nav class="barra-lateral">
+                    <h1>Gabriel Cimpean</h1>
+                    <p class="zimpi">(Zimpi)</p>
+                    <p class="pBarraLateral">Programador</p>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mi</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
+                </nav>
+                <main class="contenido">
+                    <section id="sobre-mi">
+                        <div class="hiPresentacion">
+                            <p>
+                                <span>✌🏻</span>
+                                Hola, Soy Zimpi
+                            </p>
+                        </div>
+                        <div class="presentacion">
+                            <div class="textoPresent">
+                                <p>¡Hola! Soy Gabriel Cimpean, pero puedes llamarme <spam class="palabraclave">Zimpi</spam>.</p> 
+                                <br>
+                                <p>Soy un desarrollador web con una pasión especial por la <spam class="palabraclave">programación</spam> y la <spam class="palabraclave">electrónica</spam>. 
+                                    He trabajado en la creación y mantenimiento de páginas web usando HTML, CSS, JS y PHP. 
+                                    Además, he estudiado varias áreas tecnológicas como la domótica, el montaje de cuadros 
+                                    eléctricos y diversas disciplinas de la informática.</p>    
+                                    <br>                        
+                                <p><spam class="palabraclave">Fuera del trabajo</spam>, me encanta tocar el piano, hacer ejercicio y practicar artes marciales. 
+                                    También soy árbitro de fútbol sala, lo que me ha enseñado a manejar situaciones 
+                                    inesperadas y a trabajar bajo presión. Soy un <spam class="palabraclave">gran fan de la ciencia ficción</spam>, como 
+                                    Doctor Who, <spam class="palabraclave">y del misterio</spam>, especialmente de Sherlock Holmes. Disfruto del <spam class="palabraclave">cine</spam> y las 
+                                    <spam class="palabraclave">series</spam> de todos los géneros, jugar <spam class="palabraclave">videojuegos</spam> y coleccionar cartas <spam class="palabraclave">(TCG)</spam>, especialmente 
+                                    Yu-Gi-Oh!, a lo cual suelo jugar con regularidad.</p>
+                                    <br>
+                                <p><spam class="palabraclave">Aspiro</spam> a una carrera que me permita <spam class="palabraclave">canalizar mi creatividad y habilidades técnicas</spam> en 
+                                    proyectos innovadores y desafiantes. Si quieres saber más sobre mí, mis proyectos o 
+                                    mis habilidades, navega por mi portafolio y <spam class="palabraclave">no dudes en contactarme</spam>.</p>
+                                    <br>
+                                <p><spam class="palabraclave2">¡Gracias por conocerme!</spam></p>
+                            </div>                    
+                            <div class="imgPresent">
+                                <img src="img/sobremi.jpeg" alt="sobre mi">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="hobbies">
+                            <h2>Hobbies</h2>
+                            <div class="carruselHob">
+                                <div class="container">
+                                    <img src="img/hobbie1.jpeg" alt="hobbie1" class="image">
+                                    <div class="middle">
+                                        <div class="text">Futbol Sala</div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <img src="img/hobbie2.jpeg" alt="hobbie2" class="image">
+                                    <div class="middle">
+                                        <div class="text">Judo</div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <img src="img/hobbie3.jpeg" alt="hobbie3" class="image">
+                                    <div class="middle">
+                                        <div class="text">Ajedrez</div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <img src="img/hobbie4.jpeg" alt="hobbie4" class="image">
+                                    <div class="middle">
+                                        <div class="text">Programacion web</div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <img src="img/hobbie5.jpeg" alt="hobbie5" class="image">
+                                    <div class="middle">
+                                        <div class="text">Videojuegos</div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <img src="img/hobbie6.jpeg" alt="hobbie6" class="image">
+                                    <div class="middle">
+                                        <div class="text">Cine</div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <img src="img/hobbie7.jpeg" alt="hobbie7" class="image">
+                                    <div class="middle">
+                                        <div class="text">Cubos de Rubik</div>
+                                    </div>
+                                </div>
+                                <!-- Add more containers as needed -->
+                            </div>
+                        </div>              
+                    </section>
+
+                    <section id="portafolio">
+                        <h2>Portafolio</h2>
+                        <p>[Tus trabajos realizados]</p>
+                    </section>
+
+                    <section id="habilidades">
+                        <div class="skillsprogram">
+                            <div class="h2habili">
+                                <h2>Habilidades Tecnologicas</h2>
+                                <hr class="hrspecial">
+                                <h2>Programacion</h2>
+                            </div>
+                            <div class="recuskillprogr">
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/html.png" alt="skill programacion 1" title="HTML">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/css.png" alt="skill programacion 1" title="CSS">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/js.png" alt="skill programacion 2" title="JS">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/angular.png" alt="skill programacion 3" title="ANGULAR" class="angularimg">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/github.png" alt="skill programacion 4" title="GitHub" class="githubimg">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/excel.png" alt="skill programacion 5" title="EXCEL" class="excel">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/gimp.png" alt="skill programacion 6" title="GIMP">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/vegas.png" alt="skill programacion 7" title="Sony Vegas">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/obs.png" alt="skill programacion 8" title="OBS">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/audacity.png" alt="skill programacion 9" title="Audacity">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/proteus.png" alt="skill programacion 10" title="Proteus" class="proteusimg">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/knx.png" alt="skill programacion 11" title="KNX">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/sql.png" alt="skill programacion 12" title="SQL">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/ccc.png" alt="skill programacion 13" title="C++">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/arduino.png" alt="skill programacion 14" title="Arduino">
+                                </div>
+                                <div class="skillimgpr">
+                                    <img src="img/skillsp/php.png" alt="skill programacion 15" title="PHP">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="habilidadeshr">
+                        <div class="otrasskills">
+                            <h2>Otras Habilidades</h2>
+                            <ul class="skill-list">
+                                <li>Tengo conocimientos sobre la cultura japonesa: historia, gastronomía, idioma y más.</li>
+                                <li>Aficionado a la ceremonia del té y degustador habitual.</li>
+                                <li>Practicante de karate y judo (entre otras cosas). Siempre buscando el equilibrio, al estilo del Sr. Miyagi.</li>
+                                <li>Amo los rompecabezas, cubos de Rubik, sudokus y cualquier cosa que desafíe mi mente.</li>
+                                <li>Apasionado por la tecnología, me encanta desmontar y arreglar dispositivos.</li>
+                                <li>Fan de los superhéroes: cómics, películas, videojuegos, lo que sea.</li>
+                                <li>Me gusta cocinar y experimentar en la cocina.</li>
+                                <li>Puedo tocar el piano y leer partituras sin problema.</li>
+                                <li>Me gusta resumir películas y series de manera divertida y sin spoilers, para que todo el mundo pueda disfrutarlas.</li>
+                                <li>De vez en cuando, escucho y doy consejos (si me los piden), a veces buenos, a veces no tanto, pero siempre con buena intención.</li>
+                                <li>Aprendo rápido cualquier cosa nueva, especialmente si tiene botones o cables.</li>
+                                <li>Ahorrar dinero es mi superpoder.</li>
+                                <li class="quotes">
+                                    Algunas frases que me gustan:
+                                    <ul class="quote-list">
+                                        <li>"La risa es atemporal, la imaginación no tiene edad y los sueños son para siempre." - Walt Disney</li>
+                                        <li>"Un día sin reír es un día perdido." - Charlie Chaplin</li>
+                                        <li>"La mejor manera de animarse a uno mismo es intentar animar a alguien más." - Mark Twain</li>
+                                        <li>"La vida es como una bicicleta: para mantener el equilibrio, debes seguir adelante." - Albert Einstein</li>
+                                        <li>etc.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                                    
+                        
+                    </section>
+                    
+                    <section id="contacto">
+                        <h2>Contacto</h2>
+                        <p>Email: [Tu correo]</p>
+                        <p>Redes sociales: [Tus redes]</p>
+                    </section>
+                </main>
+                <div class="posifooter">
+                    <div class="footer">Footer Content</div>
                 </div>
-                               
-                
-            </section>
-            
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <p>Email: [Tu correo]</p>
-                <p>Redes sociales: [Tus redes]</p>
-            </section>
-        </main>
-        <div class="posifooter">
-            <div class="footer">Footer Content</div>
+            </div>
         </div>
     </div>
 </body>
