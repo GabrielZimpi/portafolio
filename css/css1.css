@@ -286,7 +286,7 @@ body    {
     box-shadow: 0 0 0 0.2em black;
 }
 
-.carruselHob .text1,.carruselHob .text2,.carruselHob .text3 {
+.carruselHob .text {
     background-color: #10e956;
     font-size: 1.5em;
     padding: 10px 14px;
