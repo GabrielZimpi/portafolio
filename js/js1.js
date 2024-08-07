@@ -49,3 +49,8 @@ setTimeout(function() {
     document.getElementById('bodypresent').classList.add('hidden');
     document.getElementById('bodyprincip').classList.remove('hidden');
 }, 8000);
+
+/* CONTACTO */
+function updateText(text) {
+    document.getElementById('textenlace').innerText = text;
+}
