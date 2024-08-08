@@ -54,3 +54,6 @@ setTimeout(function() {
 function updateText(text) {
     document.getElementById('textenlace').value = text;
 }
+function openLink(url) {
+    window.open(url, '_blank');
+}

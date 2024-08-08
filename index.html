@@ -7,7 +7,8 @@
     <link href="https://fonts.cdnfonts.com/css/exo-space" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/born2bsporty-fs" rel="stylesheet">  
     <link href="https://fonts.cdnfonts.com/css/membra" rel="stylesheet">    
-    <link href="https://fonts.cdnfonts.com/css/sweetie-love" rel="stylesheet">                                              
+    <link href="https://fonts.cdnfonts.com/css/sweetie-love" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/f-frozeros" rel="stylesheet">                                                             
     <link rel="stylesheet" href="css/css1.css">
     <script src="js/js1.js"></script>
 </head>
@@ -243,10 +244,14 @@
                     <section id="contacto">
                         <h2 class="h2contacto">Contacto</h2>
                         <hr class="hr1contac">
+                        <ul class="normas">
+                            <li><span class="icon">🔗</span> Un click <span class="flechicon">-> ver</span> el enlace</li>
+                            <li><span class="icon">🔓</span> Dos clicks <span class="flechicon2">-> abrir</span> el enlace</li>
+                        </ul>
                         <div id ="enlaces" class="enlaces">
                             <div class="main">
                                 <div class="up">
-                                  <button class="card1" onclick="updateText('+34 603 422 581')">
+                                  <button class="card1" onclick="updateText('+34 603 422 581')" ondblclick="openLink('https:wa.me/34603422581')">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" 
                                     width="30px" height="30px" fill-rule="nonzero" class="whatsapp"><g fill-rule="nonzero" stroke="none" 
                                     stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" 
@@ -262,7 +267,7 @@
                                         3.74.587.257 1.05.408 1.41.523.595.19 1.13.162 1.558.1.475-.072 1.464-.6 
                                         1.673-1.178.205-.58.205-1.075.142-1.18-.061-.104-.227-.165-.475-.29Z"></path></g></g></svg>
                                   </button>
-                                  <button class="card2" onclick="updateText('linkedin.com/in/gabrielcimpean603422581/')">
+                                  <button class="card2" onclick="updateText('linkedin.com/in/gabrielcimpean603422581/')"  ondblclick="openLink('https:linkedin.com/in/gabrielcimpean603422581/')">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="linkedin" height="1.6em" viewBox="0 0 448 512">
                                     <path
                                       d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 
@@ -271,7 +276,7 @@
                                   </button>
                                 </div>
                                 <div class="down">
-                                  <button class="card3" onclick="updateText('github.com/GabrielZimpi')">
+                                  <button class="card3" onclick="updateText('github.com/GabrielZimpi')"  ondblclick="openLink('https:www.github.com/GabrielZimpi')">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px" class="github">
                                         <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,
                                         12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905
@@ -285,7 +290,7 @@
                                         4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179
                                         -0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path></svg>
                                   </button>
-                                  <button class="card4" onclick="updateText('gabrielgijon21@gmail.com')">
+                                  <button class="card4" onclick="updateText('gabrielgijon21@gmail.com')" ondblclick="openLink('mailto:gabrielgijon21@gmail.com')">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" class="email" width="24">
                                         <path d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 
                                         18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 
