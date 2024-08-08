@@ -52,5 +52,5 @@ setTimeout(function() {
 
 /* CONTACTO */
 function updateText(text) {
-    document.getElementById('textenlace').innerText = text;
+    document.getElementById('textenlace').value = text;
 }
