@@ -57,3 +57,28 @@ function updateText(text) {
 function openLink(url) {
     window.open(url, '_blank');
 }
+
+/* PROYECTOS */
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtén todos los elementos <li> con id proyectoX
+    const proyectos = document.querySelectorAll('.listaproyectos li');
+
+    // Agrega un evento de clic a cada <li>
+    proyectos.forEach(function(proyecto) {
+        proyecto.addEventListener('click', function() {
+            // Oculta todos los elementos con la clase .detallesproyectos
+            document.querySelectorAll('.detallesproyectos').forEach(function(detalle) {
+                detalle.style.display = 'none';
+            });
+
+            // Muestra solo el elemento correspondiente al id del proyecto seleccionado
+            const proyectoId = this.id.replace('proyecto', 'etc-proyecto');
+            document.getElementById(proyectoId).style.display = 'flex';
+        });
+    });
+
+    // Oculta todos los detalles inicialmente
+    document.querySelectorAll('.detallesproyectos').forEach(function(detalle) {
+        detalle.style.display = 'none';
+    });
+});

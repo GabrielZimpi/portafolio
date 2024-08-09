@@ -19,7 +19,9 @@ body    {
     width: 100%;
     flex-wrap: wrap;
 }
-
+.labelinvisible {
+  display: none;
+}
 .barra-lateral {
     background-color: #10e956;
     padding: 20px;
@@ -159,7 +161,11 @@ body    {
     padding: .5rem 1rem;
     text-transform: capitalize;
 }
-
+@media (max-width: 340px) {
+  .hiPresentacion p {
+    letter-spacing: 0;
+}
+}
 @keyframes saludo {
     0% {
         -webkit-transform: translateZ(0) scale(1);
@@ -1064,7 +1070,6 @@ margin-top: 1em;
   box-shadow: 8px 8px 0 #00bb00;;
   min-width: 13em;
 }
-
 @keyframes shake {
   0% {
     transform: translateX(0);
@@ -1190,4 +1195,80 @@ margin-top: 1em;
 .flechicon2  {
   font-family: 'f Frozeros', sans-serif;  
   color: #f9c23c;                                         
+}
+
+/* PROYECTOS */
+
+.inputproyect::placeholder {
+  color: #888;
+}
+
+.inputproyect:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 #00bb00;
+}
+.input-container-proyect {
+  position: relative;
+  width: 35vw;
+  margin: 2em auto 1em auto;
+  min-width: 14.5em;
+}
+.inputproyect{
+  width: 35vw;
+  height: 60px;
+  padding: 12px;
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+  color: #000;
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: 0;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 8px 8px 0 #00bb00;;
+  min-width: 13em;
+}
+.input-container-proyect::after {
+  content: "|";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  animation: blink 0.7s step-end infinite;
+}
+.input-container-proyect:hover::after {
+  transform: translate(-4px, -14px);
+}
+#enlaceproy1 {
+  text-align: center;
+}
+.imgproyectos .image {
+  width: 100%;
+  border-radius: 3.8em;
+  backface-visibility: hidden;
+  height: 100%;
+}
+.imgproyectos {
+  position: relative;
+  width: 12em;
+  margin: 0.5em;
+  border: solid 0.2em black;
+  height: 12em;
+  border-radius: 4em;
+}
+
+#portafolio {
+  flex-wrap: wrap;
+}
+.detallesproyectos  {
+  flex-wrap: wrap;
+  flex-direction: column;
+}  
+.inforproyectos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tecnologiasproyectos {
+  width: 100%;
 }
