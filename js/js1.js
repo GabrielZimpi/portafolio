@@ -66,6 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Agrega un evento de clic a cada <li>
     proyectos.forEach(function(proyecto) {
         proyecto.addEventListener('click', function() {
+
+            document.getElementById('portadaporta').classList.remove('portadaporta');
+            document.getElementById('portadaporta').classList.add('hidden');
+
             // Oculta todos los elementos con la clase .detallesproyectos
             document.querySelectorAll('.detallesproyectos').forEach(function(detalle) {
                 detalle.style.display = 'none';
