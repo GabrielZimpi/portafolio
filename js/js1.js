@@ -59,6 +59,22 @@ function openLink(url) {
 }
 
 /* PROYECTOS */
+function updateTextProyect1(text1) {
+    document.getElementById('enlaceproy1').value = text1;
+}
+function updateTextProyect2(text2) {
+    document.getElementById('enlaceproy2').value = text2;
+}
+function updateTextProyect3(text3) {
+    document.getElementById('enlaceproy3').value = text3;
+}
+function updateTextProyect4(text4) {
+    document.getElementById('enlaceproy4').value = text4;
+}
+function updateTextProyect5(text5) {
+    document.getElementById('enlaceproy5').value = text5;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Obtén todos los elementos <li> con id proyectoX
     const proyectos = document.querySelectorAll('.listaproyectos li');
@@ -86,3 +102,16 @@ document.addEventListener('DOMContentLoaded', function() {
         detalle.style.display = 'none';
     });
 });
+
+function verImg1() {
+    // Mostrar la img1 y ocultar la img2
+    document.querySelector('.img1').classList.add('show');
+    document.querySelector('.img2').classList.remove('show');
+}
+
+function verImg2() {
+    // Mostrar la img2 y ocultar la img1
+    document.querySelector('.img2').classList.add('show');
+    document.querySelector('.img1').classList.remove('show');
+}
+
