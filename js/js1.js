@@ -103,15 +103,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function verImg1() {
-    // Mostrar la img1 y ocultar la img2
-    document.querySelector('.img1').classList.add('show');
-    document.querySelector('.img2').classList.remove('show');
+function verImg(button, imgClass) {
+    // Encontrar el contenedor del proyecto al que pertenece el botón
+    var projectContainer = button.closest('.inforproyectos');
+    
+    // Ocultar todas las imágenes dentro de este proyecto
+    projectContainer.querySelectorAll('.imageinvisi').forEach(function(img) {
+        img.classList.remove('show');
+    });
+    
+    // Mostrar la imagen correspondiente en este proyecto
+    projectContainer.querySelector('.' + imgClass).classList.add('show');
 }
 
-function verImg2() {
-    // Mostrar la img2 y ocultar la img1
-    document.querySelector('.img2').classList.add('show');
-    document.querySelector('.img1').classList.remove('show');
-}
-
+// pop up //
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleccionar todas las imágenes con la clase 'imageinvisi'
+    const imgInvisi = document.querySelectorAll('.imageinvisi');
+    
+    imgInvisi.forEach(function(img) {
+      // Crear el contenedor del pop-up
+      const popup = document.createElement('div');
+      popup.classList.add('image-popup');
+  
+      // Crear una copia de la imagen para el pop-up
+      const popupImage = new Image();
+      popupImage.src = img.src;
+  
+      // Añadir la imagen al pop-up
+      popup.appendChild(popupImage);
+      document.body.appendChild(popup);
+  
+      // Evento para mostrar el pop-up al hacer clic en la imagen
+      img.addEventListener('click', function() {
+        popup.classList.add('show');
+      });
+  
+      // Evento para ocultar el pop-up al hacer clic en cualquier parte del mismo
+      popup.addEventListener('click', function() {
+        popup.classList.remove('show');
+      });
+    });
+  });
+  

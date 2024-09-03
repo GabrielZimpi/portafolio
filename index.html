@@ -153,11 +153,11 @@
                         <div class="portafolio">
                             <div class="listaproyectos">
                                 <ul>
-                                    <li id="proyecto1" onclick="updateTextProyect1('https://gabrielzimpi.github.io/rumania/')"><span class="spanproyect">&lt;Rumania&gt;</span> detalles del pais</li>
-                                    <li id="proyecto2" onclick="updateTextProyect2('Enlace2')"><span class="spanproyect">&lt;Semana Grande&gt;</span> Conciertos en Gijon 2024</li>
-                                    <li id="proyecto3" onclick="updateTextProyect3('Enlace3')"><span class="spanproyect">&lt;Rumania&gt;</span> detalles del pais</li>
-                                    <li id="proyecto4" onclick="updateTextProyect4('Enlace4')"><span class="spanproyect">&lt;Rumania&gt;</span> detalles del pais</li>
-                                    <li id="proyecto5" onclick="updateTextProyect5('Enlace5')"><span class="spanproyect">&lt;Rumania&gt;</span> detalles del pais</li>
+                                    <li id="proyecto1" onclick="updateTextProyect1('https://gabrielzimpi.github.io/rumania/')"><span class="spanproyect">&lt;Rumania&gt;</span> Detalles del pais</li>
+                                    <li id="proyecto2" onclick="updateTextProyect2('https://github.com/GabrielZimpi/semanagrandegijon24')"><span class="spanproyect">&lt;Semana Grande&gt;</span> Conciertos en Gijon 2024</li>
+                                    <li id="proyecto3" onclick="updateTextProyect3('Proyecto Privado')"><span class="spanproyect">&lt;Altas Ciudadanas&gt;</span> Codigo privado</li>
+                                    <li id="proyecto4" onclick="updateTextProyect4('Proyecto Privado')"><span class="spanproyect">&lt;Educacion Publica&gt;</span> Centros en Gijon</li>
+                                    <li id="proyecto5" onclick="updateTextProyect5('https://gabrielzimpi.github.io/agenda/')"><span class="spanproyect">&lt;Custom Agenda&gt;</span> Periodo: 04/2023 - 09/2024</li>
                                 </ul>
                             </div>
                             <div id="portadaporta" class="portadaporta">
@@ -167,8 +167,11 @@
                             <div class="detallesproyectos" id="etc-proyecto1">
                                 <div class="inforproyectos">
                                     <div class="imgproyectos">
-                                        <img src="img/proyectos/proyecto1_1.jpg" class="image">
-                                    </div>
+                                        <img src="img/proyectos/proyecto1_1.jpg" class="imageinvisi img1 show">
+                                        <div class="botonesimg">
+                                            <button class="ui-btn" onclick="verImg(this, 'img1')">Imagen 1</button>
+                                        </div>
+                                    </div> 
                                     <div class="descriproyectos">
                                         <p>Esta es la primera pagina que cree desde cero con unos conocimientos basicos en creacion de paginas web.</p><br>
                                         <p>La página ofrece una visión general de Rumania, abarcando varios temas.</p><br> 
@@ -215,18 +218,24 @@
                                         <img src="img/proyectos/proyecto2_1.jpg" class="imageinvisi img1 show">
                                         <img src="img/proyectos/proyecto2_2.jpg" class="imageinvisi img2">
                                         <div class="botonesimg">
-                                            <button class="ui-btn" onclick="verImg1()">Imagen 1</button>
-                                            <button class="ui-btn" onclick="verImg2()">Imagen 2</button>
+                                            <button class="ui-btn" onclick="verImg(this, 'img1')">Imagen 1</button>
+                                            <button class="ui-btn" onclick="verImg(this, 'img2')">Imagen 2</button>
                                         </div>
                                     </div>                                                                       
                                     <div class="descriproyectos">
-                                        <p>La página ofrece una visión general de Rumania, abarcando varios temas.</p><br> 
-                                        <p>Examina los idiomas principales y su diversidad, además de la religión y las 
-                                            festividades importantes del país. También trata la economía y el sistema de 
-                                            salud. Explora influencias culturales como el mito de Drácula y la región de 
-                                            Transilvania.</p><br>
-                                        <p>Menciona a deportistas destacados y contribuciones en cine y música. 
-                                            Finalmente, da un vistazo a la historia y la política de Rumania.</p>
+                                        <p>La pagina es un "boceto" en PHP.</p><br> 
+                                        <p>La intencion era crear una pagina web clara que reuniera todos los conciertos 
+                                            pertenecientes a la "Semana Grande" de Gijon.</p><br>
+                                        <p>En cada concierto se mostraria la siguiente informacion:</p><br>
+                                        <p><ul>
+                                                <li>Horario</li>
+                                                <li>Ubicacion Exacta</li>
+                                                <li>Artistas que actuarian</li>
+                                                <li>Una breve descripcion del concierto</li>
+                                                <li>Redes Sociales de dichos artistas</li>
+                                            </ul>
+                                        </p><br>
+                                        <p>Este trabajo nunca fue publicado, por lo tanto, solo esta disponible su codigo en GitHub.</p>
                                     </div>
                                     <div class="block-tecnologias">
                                         <p>Herramientas Utilizadas</p>
@@ -239,6 +248,9 @@
                                                 <span></span>
                                             </div>
                                             <div class="tecutiliz"> JS
+                                                <span></span>
+                                            </div>
+                                            <div class="tecutiliz"> PHP
                                                 <span></span>
                                             </div>
                                         </div>
@@ -250,9 +262,9 @@
                                         <input id="enlaceproy2" class="inputproyect" name="enlaceproy2" type="text" readonly/>
                                     </div>
                                     <div class="bott-enl-proy" class="boton-enlace-proyecto">
-                                        <button class="ui-btn" onclick="openLink('https://linkedin.com/in/gabrielcimpean603422581/')">
+                                        <button class="ui-btn" onclick="openLink('https://github.com/GabrielZimpi/semanagrandegijon24')">
                                             <span>
-                                              VER PAGINA
+                                              VER CODIGO
                                             </span>
                                           </button>
                                     </div>
@@ -262,16 +274,20 @@
                             <div class="detallesproyectos" id="etc-proyecto3">
                                 <div class="inforproyectos">
                                     <div class="imgproyectos">
-                                        <img src="img/proyectos/proyecto1_1.jpg" class="image">
-                                    </div>
+                                        <img src="img/proyectos/proyecto3_1.jpg" class="imageinvisi img1 show">
+                                        <img src="img/proyectos/proyecto3_2.jpg" class="imageinvisi img2">
+                                        <img src="img/proyectos/proyecto3_3.jpg" class="imageinvisi img3">
+                                        <div class="botonesimg">
+                                            <button class="ui-btn" onclick="verImg(this, 'img1')">Imagen 1</button>
+                                            <button class="ui-btn" onclick="verImg(this, 'img2')">Imagen 2</button>
+                                            <button class="ui-btn" onclick="verImg(this, 'img3')">Imagen 3</button>
+                                        </div>
+                                    </div>                                                                       
                                     <div class="descriproyectos">
-                                        <p>La página ofrece una visión general de Rumania, abarcando varios temas.</p><br> 
-                                        <p>Examina los idiomas principales y su diversidad, además de la religión y las 
-                                            festividades importantes del país. También trata la economía y el sistema de 
-                                            salud. Explora influencias culturales como el mito de Drácula y la región de 
-                                            Transilvania.</p><br>
-                                        <p>Menciona a deportistas destacados y contribuciones en cine y música. 
-                                            Finalmente, da un vistazo a la historia y la política de Rumania.</p>
+                                        <p>La pagina fue creada utilizando datos abiertos proporcionados, y actualizados en tiempo real, por el Ayuntamiento de Gijon.</p><br> 
+                                        <p>La finalida de la pagina es tratar y mostrar, de forma clara, dichos datos.</p>
+                                        <p>En este caso, la informacion se ha mostrado utilizando diversos graficos, proporcionando un buscador personalizado y una pantalla con infomracion "resumen" de los datos.</p><br>
+                                        <p>Este proyecto es privado y por lo tanto no se puede visualizar.</p><br>
                                     </div>
                                     <div class="block-tecnologias">
                                         <p>Herramientas Utilizadas</p>
@@ -284,6 +300,9 @@
                                                 <span></span>
                                             </div>
                                             <div class="tecutiliz"> JS
+                                                <span></span>
+                                            </div>
+                                            <div class="tecutiliz"> XHR
                                                 <span></span>
                                             </div>
                                         </div>
@@ -295,9 +314,9 @@
                                         <input id="enlaceproy3" class="inputproyect" name="enlaceproy3" type="text" readonly/>
                                     </div>
                                     <div class="bott-enl-proy" class="boton-enlace-proyecto">
-                                        <button class="ui-btn" onclick="openLink('https://linkedin.com/in/gabrielcimpean603422581/')">
+                                        <button class="ui-btn">
                                             <span>
-                                              VER PAGINA
+                                              PAGINA PRIVADA
                                             </span>
                                           </button>
                                     </div>
@@ -307,16 +326,22 @@
                             <div class="detallesproyectos" id="etc-proyecto4">
                                 <div class="inforproyectos">
                                     <div class="imgproyectos">
-                                        <img src="img/proyectos/proyecto1_1.jpg" class="image">
-                                    </div>
+                                        <img src="img/proyectos/proyecto4_1.jpg" class="imageinvisi img1 show">
+                                        <div class="botonesimg">
+                                            <button class="ui-btn" onclick="verImg(this, 'img1')">Imagen 1</button>
+                                        </div>
+                                    </div> 
                                     <div class="descriproyectos">
-                                        <p>La página ofrece una visión general de Rumania, abarcando varios temas.</p><br> 
-                                        <p>Examina los idiomas principales y su diversidad, además de la religión y las 
-                                            festividades importantes del país. También trata la economía y el sistema de 
-                                            salud. Explora influencias culturales como el mito de Drácula y la región de 
-                                            Transilvania.</p><br>
-                                        <p>Menciona a deportistas destacados y contribuciones en cine y música. 
-                                            Finalmente, da un vistazo a la historia y la política de Rumania.</p>
+                                        <p>La pagina fue creada utilizando datos abiertos proporcionados, y actualizados en tiempo real, por el Ayuntamiento de Gijon.</p><br> 
+                                        <p>La finalida de la pagina es tratar y mostrar, de forma clara, dichos datos.</p>
+                                        <p>En este caso, la informacion se ha mostrado utilizando un mapa general de la ciudad, en el cual, aparecen marcados todos los Centros 
+                                            de enseñanza publica pertenecientes a Gijon.</p>
+                                        <p>Si se pulsa cualquier marcador, aparecera el nombre de dicho centro.</p>
+                                        </p><br>
+                                        <p>Tambien se ha añadido 3 "ventanas" en las cuales aparece un listado con todos los centros pertenecientes a dicho nivel formativo e 
+                                            informacion sobre los mismos
+                                        </p><br>
+                                        <p>Este proyecto es privado y por lo tanto no se puede visualizar.</p><br>
                                     </div>
                                     <div class="block-tecnologias">
                                         <p>Herramientas Utilizadas</p>
@@ -331,6 +356,9 @@
                                             <div class="tecutiliz"> JS
                                                 <span></span>
                                             </div>
+                                            <div class="tecutiliz"> XHR
+                                                <span></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -340,9 +368,9 @@
                                         <input id="enlaceproy4" class="inputproyect" name="enlaceproy4" type="text" readonly/>
                                     </div>
                                     <div class="bott-enl-proy" class="boton-enlace-proyecto">
-                                        <button class="ui-btn" onclick="openLink('https://linkedin.com/in/gabrielcimpean603422581/')">
+                                        <button class="ui-btn">
                                             <span>
-                                              VER PAGINA
+                                                PAGINA PRIVADA
                                             </span>
                                           </button>
                                     </div>
@@ -352,16 +380,15 @@
                             <div class="detallesproyectos" id="etc-proyecto5">
                                 <div class="inforproyectos">
                                     <div class="imgproyectos">
-                                        <img src="img/proyectos/proyecto1_1.jpg" class="image">
-                                    </div>
+                                        <img src="img/proyectos/proyecto5_1.jpg" class="imageinvisi img1 show">
+                                        <div class="botonesimg">
+                                            <button class="ui-btn" onclick="verImg(this, 'img1')">Imagen 1</button>
+                                        </div>
+                                    </div> 
                                     <div class="descriproyectos">
-                                        <p>La página ofrece una visión general de Rumania, abarcando varios temas.</p><br> 
-                                        <p>Examina los idiomas principales y su diversidad, además de la religión y las 
-                                            festividades importantes del país. También trata la economía y el sistema de 
-                                            salud. Explora influencias culturales como el mito de Drácula y la región de 
-                                            Transilvania.</p><br>
-                                        <p>Menciona a deportistas destacados y contribuciones en cine y música. 
-                                            Finalmente, da un vistazo a la historia y la política de Rumania.</p>
+                                        <p>El proyecto se trata de una agenda personalizada cubriendo un periodo determinado de tiempo.</p><br> 
+                                        <p>En este caso cubre desde el 04/2023 hasta el 09/2024. Nunca mostrara nada antes ni despues de dichas fechas.</p><br>
+                                        <p>Todos los eventos son ficticios y se han creado para poder hacerse una idea del funcionamiento de la agenda.</p>
                                     </div>
                                     <div class="block-tecnologias">
                                         <p>Herramientas Utilizadas</p>
@@ -385,7 +412,7 @@
                                         <input id="enlaceproy5" class="inputproyect" name="enlaceproy5" type="text" readonly/>
                                     </div>
                                     <div class="bott-enl-proy" class="boton-enlace-proyecto">
-                                        <button class="ui-btn" onclick="openLink('https://linkedin.com/in/gabrielcimpean603422581/')">
+                                        <button class="ui-btn" onclick="openLink('https://gabrielzimpi.github.io/agenda/')">
                                             <span>
                                               VER PAGINA
                                             </span>

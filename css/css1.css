@@ -1211,10 +1211,15 @@ border-radius: 1em;
   color: #888;
 }
 .spanproyect  {
+  display: flex;
   font-family: 'Born2bSporty FS', sans-serif;
-  margin-right: 1em;
-  font-size: clamp(1.17em, 1.3vw, 10em);
   margin-bottom: 0.3em;
+  width: 11.3vw;
+  text-align: center;
+  font-size: clamp(1.4em, 2vw, 2.85em);
+  white-space: nowrap;
+  align-items: center;
+  min-width: 5em;
 }
 .inputproyect:hover {
   transform: translate(-4px, -4px);
@@ -1258,7 +1263,7 @@ border-radius: 1em;
   transform: translate(-4px, -14px);
 }
 
-.imgproyectos .image, .imgproyectos .imageinvisi {
+.imgproyectos .imageinvisi {
   width: 100%;
   border-radius: 1.8em;
   backface-visibility: hidden;
@@ -1282,6 +1287,15 @@ border-radius: 1em;
   min-width: 13em;
   text-align: justify;
   padding: 0.5em;
+}
+.descriproyectos ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.descriproyectos ul li {
+  width: 80%;
 }
 #portafolio {
   flex-wrap: wrap;
@@ -1336,9 +1350,10 @@ border-radius: 1em;
   margin: 1em auto 0 auto;
 }
 .listaproyectos {
-  width: 20%;
-  min-width: 13em;
+  width: 19vw;
+  min-width: 15em;
   margin-bottom: 1em;
+  max-width: 25em;
 }
 
 .listaproyectos ul {
@@ -1629,4 +1644,35 @@ border-radius: 1em;
 .botonesimg button  {
   padding: 0.1em 0.5em 0.3em 0.5em;
   margin-bottom: 0.2em;
+}
+
+.imageinvisi:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  filter: grayscale(1);
+}
+.image-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
+  z-index: 1000;
+}
+.image-popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 1.8em;
+  border: solid 0.2em black;
+}
+.image-popup.show {
+  visibility: visible;
+  opacity: 1;
 }
