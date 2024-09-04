@@ -1314,7 +1314,7 @@ border-radius: 1em;
   width: 100%;
   font-size: clamp(1.6em, 2vw, 10em);
 }
-#portafolio hr  {
+#portafolio hr, #cv hr{
   width: 100%;
   margin: 0 0 1em 0;
   background-color: #10e956;
@@ -1675,4 +1675,175 @@ border-radius: 1em;
 .image-popup.show {
   visibility: visible;
   opacity: 1;
+}
+
+/* CV */
+#cv {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#cvp {
+  width: 100%;
+  font-size: clamp(1.86em, 2vw, 10em);
+}
+#cv hr {
+ margin: 0.5em auto 1em auto;
+}
+#rom  {
+  background-color: #0000ffb8;
+}
+#esp  {
+  background-color: #ff0000c7;
+}
+#eng  {
+  background-color: #d3d31085;
+  color: black;
+}
+#rom, #rom .user-picture img  {
+  border-color: black;
+}
+#rom .social-media::before  {
+  background: black;
+}
+#eng, #eng .user-picture img  {
+  border-color: black;
+}
+#eng .social-media::before  {
+  background: black;
+}
+#esp, #esp .user-picture img  {
+  border-color: black;
+}
+#esp .social-media::before  {
+  background: black;
+}
+#cvcard {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  min-height: 35em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-client {
+  background: #2cb5a0;
+  width: 13rem;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  margin-bottom: 1em;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 5rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture img {
+  width: 100%;
+  border: solid 2px black;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 1em;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+  margin-top: 0.5em;
+}
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 20px 0;
+  background: #7cdacc;
+}
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+.social-media button {
+  padding: 0.3em 0.5em;
+  border-radius: 10px;
+  background-color: #47ffc7;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer; 
+  transition: transform 0.2s ease-in-out;
+}
+.social-media button:hover {
+  transform: scale(1.1); 
 }
