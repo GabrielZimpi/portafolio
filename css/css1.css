@@ -12,7 +12,8 @@ body    {
     font-family: 'Exo Space', sans-serif;
     width: 90%;
     margin: 5vw auto 5vw auto;       
-    background-color: white;                            
+    background-color: white;   
+    max-width: 125em;                         
 }
 .contenedor {
     display: flex;
@@ -30,6 +31,7 @@ body    {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    min-height: 41vw;
 }
 
 .barra-lateral h1 {
@@ -122,8 +124,9 @@ body    {
         font-size: 20px;
     }
     .posifooter {
-        border: 0.3em solid black;
-        border-top: 0;
+      border: 0.3em solid black;
+      border-top: 0;
+      background-color: #10e956;
     }
     .carruselHob    {
         padding: 0.5em;
@@ -138,6 +141,7 @@ body    {
 
 .footer {
     background-color: #10e956;
+    visibility: hidden;
 }
 
 /* sobre mi */
@@ -446,12 +450,15 @@ body    {
     text-transform: none;
     width: 45%;
     min-width: 10em;
+    transition: all 0.3s ease;
 }
-
+.skill-list .quotes {
+  transition: all 0.3s ease;
+}
 .skill-list li:hover {
-    background-color: #fffdfd;
-    border: 0.0em solid #4caf50;
-    zoom: 1.2;
+  background-color: #fffdfd;
+  border: 0.1em solid #4caf50;
+  font-size: 1.1em;
 }
 
 .skill-list li::before {
@@ -494,13 +501,13 @@ body    {
     margin: 0;
 }
 .skill-list .quotes:hover   {
-    background-color: #e0e0e0;
-    border: 0.3em solid #4caf50;
-    zoom: 1.2;
+  background-color: #e0e0e0;
+  border: 0.3em solid #4caf50;
+  font-size: 1em;
 }
 .skill-list .quotes .quote-list li:hover {
     background-color: #fffdfd;
-    border: 0.0em solid #4caf50;
+    border: 0.1em solid #4caf50;
     zoom: 0;
 }
 
