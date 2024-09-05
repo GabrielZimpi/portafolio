@@ -15,10 +15,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             const seccionObjetivo = document.querySelector(enlace.getAttribute('href'));
             seccionObjetivo.style.display = 'flex';
+
+            // Verificar el ancho de la pantalla y desplazar solo si es menor de 768px
+            if (window.innerWidth < 768) {
+                seccionObjetivo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         });
     });
 
-    // Mostrar la primera seccion por defecto
+    // Mostrar la primera sección por defecto
     secciones.forEach((seccion, indice) => {
         if (indice === 0) {
             seccion.style.display = 'flex';

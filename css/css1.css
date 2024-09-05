@@ -77,6 +77,19 @@ body    {
 .contenido section {
     margin-bottom: 40px;
 }
+.seccion {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(20px);
+  display: none;
+}
+
+.seccion.visible {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex; /* O cualquier display que necesites */
+}
+
 
 .contenido section h2 {
     font-size: 22px;
@@ -449,7 +462,7 @@ body    {
     border: 0.3em solid #4caf50;
     text-transform: none;
     width: 45%;
-    min-width: 10em;
+    min-width: 12em;
     transition: all 0.3s ease;
 }
 .skill-list .quotes {
