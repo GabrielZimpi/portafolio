@@ -79,6 +79,9 @@ function updateTextProyect4(text4) {
 function updateTextProyect5(text5) {
     document.getElementById('enlaceproy5').value = text5;
 }
+function updateTextProyect6(text6) {
+    document.getElementById('enlaceproy6').value = text6;
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     // Obtén todos los elementos <li> con id proyectoX
